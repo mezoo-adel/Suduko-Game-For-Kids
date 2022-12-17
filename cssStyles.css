@@ -1,0 +1,107 @@
+body {
+    background-image: url("gallery/background.jpg");
+    background-position: center;
+    display: flex;
+    font-family: Helvetica;
+
+}
+
+table{
+    margin: auto;
+    background-color: turquoise;
+}
+table a img {
+    /*gallery image*/
+    border-radius: 25px;
+}
+
+form {
+    /* login form*/
+    margin: auto;
+    border: solid 10px turquoise;
+    border-radius: 35px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(183, 230, 248);
+}
+
+input,
+select {
+    /*form*/
+    padding: 8px;
+    width: 100%;
+}
+
+#intoTheGameBtn {
+    margin: 0px 75px;
+    margin-top: 25px;
+    border-radius: 35px;
+    padding: 12px;
+    font-size: large;
+}
+#gameTablue{
+    /*playig area*/
+    margin-top: 80px;
+    margin-left: 8px;
+    margin: auto;
+}
+.tdgame{
+    text-align: center;
+    height:100px;
+    width: 100px;
+    background-color: bisque;
+}
+td:hover {
+    margin: 10px 45px;
+    padding: 8px;
+    background-color: rgb(250, 143, 241);
+    font-size: 14px;
+}/* End of login form*/
+
+#tableOptionID {
+    /* table on left to select for playing*/
+    background-color: rgb(58, 204, 189);
+    margin-left: 0px;
+    margin-top: 1%;
+}
+
+.focus{ /*selected td*/ 
+border: 2px dashed darkblue;
+}
+.root{ /*selected td*/ 
+    background-color: cadetblue;
+    }
+#startPlaying { /*startplaying btn*/
+    border-radius: 35px;
+    padding:5px 25px;
+     font-size: large;
+     background-color: snow;    
+  display: flex;
+  flex-direction: row;
+}
+#endPlaying { /*endPlaying btn*/
+   visibility: hidden;
+     border-radius: 35px;
+     padding:5px 25px;
+      font-size: medium;
+      background-color: snow;    
+ }
+button:hover,#startPlaying:hover , #endPlaying:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+#textNameTime {
+    /* UsrName and Timer*/
+    position: absolute;
+    display: inline-block;
+    right: 1%;
+    top: 1%;
+    left: auto;
+    padding:0px 5px;
+    border-radius: 25px;
+    font-family:Georgia;
+    font-size: x-large;
+    border: 2px solid tomato;
+    background-color: rgb(11, 255, 194);
+    text-align: center;
+}
