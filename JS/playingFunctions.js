@@ -9,6 +9,9 @@ let matrixHorizentalFunc = function (table) { // iterate row by row and save it 
             console.log(table[start].counter);
             target += table[start].counter;
         }
+        if (isNaN(target)) {
+            target = 0 ;
+        }
         arr[i] = target;
         end += 4;
         target = 0;
@@ -23,6 +26,9 @@ let matrixVerticalFunc = function (table) {  // iterate column by column and sav
         for (start; start < end; start += 4) {
             console.log(table[start].counter);
             target += table[start].counter;
+        }
+        if (isNaN(target)) {
+            target = 0 ;
         }
         arr[i] = target;
         start = i + 1; target = 0;
